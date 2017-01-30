@@ -1,0 +1,26 @@
+PODS:
+  - ObjectMapper (2.2.2)
+  - RxCocoa (3.1.0):
+    - RxSwift (~> 3.1)
+  - RxObjectMapper (0.1.0):
+    - ObjectMapper (~> 2.2)
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.1.0)
+
+DEPENDENCIES:
+  - RxObjectMapper (from `../`)
+
+EXTERNAL SOURCES:
+  RxObjectMapper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
+  RxObjectMapper: 1b38356ea68c69e04807b8303a493dd07e860382
+  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
+
+PODFILE CHECKSUM: 6d5127b05f3a447dc4324d3b16b50fd6ecfe32d5
+
+COCOAPODS: 1.1.1
