@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxObjectMapper_Example' do
+  pod 'RxObjectMapper', :path => '../'
+
+  target 'RxObjectMapper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
