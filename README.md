@@ -17,17 +17,17 @@ RxObjectMapper is a set of extensions over `Observable<Element>` that transforms
 let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")!
 
 URLSession.shared
-.rx.json(url: url)
-.mapObject(type: Post.self)
-.subscribe(
-onNext: { (post: Post) in
-print("Post title => \(post.title)")
-},
-onError: { _ in
-print("Error")
-}
-)
-.addDisposableTo(disposeBag)
+    .rx.json(url: url)
+    .mapObject(type: Post.self)
+    .subscribe(
+        onNext: { (post: Post) in
+            print("Post title => \(post.title)")
+        },
+        onError: { _ in
+            print("Error")
+        }
+    )
+    .addDisposableTo(disposeBag)
 ```
 
 ## mapArray
@@ -36,17 +36,17 @@ print("Error")
 
 ```swift
 URLSession.shared
-.rx.json(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
-.mapArray(type: Post.self)
-.subscribe(
-onNext: { (posts: [Post]) in
-// ...
-},
-onError: { _ in
-print("Error")
-}
-)
-.addDisposableTo(disposeBag)
+    .rx.json(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
+    .mapArray(type: Post.self)
+    .subscribe(
+        onNext: { (posts: [Post]) in
+            // ...
+        },
+        onError: { _ in
+            print("Error")
+        }
+    )
+    .addDisposableTo(disposeBag)
 ```
 
 ## Example
